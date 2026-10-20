@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perspective Library — كتب مجانية عن علم النفس والمشاعر وطريقة التفكير</title>
+  <meta name="description" content="كتب قصيرة مجانية في علم النفس والعواطف والانضباط الذاتي من تأليف Samarth Kulkarni. جرّب قراءة كيف تستخدم الغضب لصالحك، واستخدم التسويف لصالحك، واستخدم الصراعات لصالحك، والبقاء —writing عملي بدون أي حشو عن سبب شعورنا وتصرفنا كما نفعل." />
+  <meta name="keywords" content="كتب علم النفس، المشاعر، الانضباط الذاتي، العقلية، الغضب، الكسل، حل النزاعات، آلية البقاء، كتب مجانية، مكتبة المنظور، سامارث كولكارني" />
+  <meta name="author" content="Samarth Kulkarni" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://samarthkulkarni16.github.io/perspective-library-ar/" />
+  <link rel="alternate" hreflang="en" href="https://samarthkulkarni16.github.io/perspective-library/" />
+  <link rel="alternate" hreflang="hi" href="https://samarthkulkarni16.github.io/perspective-library-hi/" />
+  <link rel="alternate" hreflang="ar" href="https://samarthkulkarni16.github.io/perspective-library-ar/" />
+  <link rel="alternate" hreflang="pt" href="https://samarthkulkarni16.github.io/perspective-library-pt/" />
+  <link rel="alternate" hreflang="es" href="https://samarthkulkarni16.github.io/perspective-library-es/" />
+  <link rel="alternate" hreflang="x-default" href="https://samarthkulkarni16.github.io/perspective-library/" />
+  <link rel="icon" type="image/png" href="logo.jpeg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Perspective Library" />
+  <meta property="og:title" content="Perspective Library — كتب مجانية عن علم النفس والمشاعر وطريقة التفكير" />
+  <meta property="og:description" content="كتب قصيرة مجانية عن علم النفس والعواطف والانضباط الذاتي — قراءات عملية خالية من الحشو توضح لماذا نشعر ونتصرف كما نفعل." />
+  <meta property="og:url" content="https://samarthkulkarni16.github.io/perspective-library-ar/" />
+  <meta property="og:image" content="https://samarthkulkarni16.github.io/perspective-library-ar/logo.jpeg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Perspective Library — كتب مجانية عن علم النفس والمشاعر وطريقة التفكير" />
+  <meta name="twitter:description" content="كتب قصيرة مجانية في علم النفس، والمشاعر، والانضباط الذاتي للكاتب Samarth Kulkarni." />
+  <meta name="twitter:image" content="https://samarthkulkarni16.github.io/perspective-library-ar/logo.jpeg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Perspective Library",
+  "url": "https://samarthkulkarni16.github.io/perspective-library-ar/",
+  "description": "كتب قصيرة مجانية في علم النفس، والمشاعر، والانضباط الذاتي للكاتب Samarth Kulkarni.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Samarth Kulkarni"
+  },
+  "hasPart": [
+    {
+      "@type": "Book",
+      "name": "كيف تستخدم الغضب لصالحك",
+      "description": "الغضب ليس مشكلة إذا كنت تعرف ما هو.",
+      "genre": "المشاعر",
+      "url": "https://samarthkulkarni16.github.io/perspective-library-ar/#book/anger",
+      "author": {
+        "@type": "Person",
+        "name": "Samarth Kulkarni"
+      }
+    },
+    {
+      "@type": "Book",
+      "name": "استخدم المماطلة لصالحك",
+      "description": "توقف عن محاربتها. ابدأ بتوجيهها.",
+      "genre": "الإنتاجية",
+      "url": "https://samarthkulkarni16.github.io/perspective-library-ar/#book/procrastination",
+      "author": {
+        "@type": "Person",
+        "name": "Samarth Kulkarni"
+      }
+    },
+    {
+      "@type": "Book",
+      "name": "استخدم الصراعات لصالحك",
+      "description": "لست بحاجة إلى الهروب من المشكلات. أنت بحاجة إلى ترقيتها.",
+      "genre": "طريقة التفكير",
+      "url": "https://samarthkulkarni16.github.io/perspective-library-ar/#book/conflicts",
+      "author": {
+        "@type": "Person",
+        "name": "Samarth Kulkarni"
+      }
+    },
+    {
+      "@type": "Book",
+      "name": "البقاء",
+      "description": "فهم الأساس الذي يقوم عليه كل ما نفعله.",
+      "genre": "علم النفس",
+      "url": "https://samarthkulkarni16.github.io/perspective-library-ar/#book/survival",
+      "author": {
+        "@type": "Person",
+        "name": "Samarth Kulkarni"
+      }
+    }
+  ],
+  "inLanguage": "ar"
+}
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rye&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #000;
+      --surface: #0a0a0a;
+      --surface2: #111;
+      --border: rgba(255,255,255,0.07);
+      --text: #f0f0f0;
+      --muted: #666;
+      --accent: #e8e8e8;
+      --accent-dim: rgba(255,255,255,0.05);
+    }
+html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-y: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Public SEO preview — visible to everyone, no login required */
+    #seo-preview { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    #seo-preview h1 { font-family: 'Rye', serif; font-size: 24px; margin-bottom: 10px; }
+    #seo-preview > p.intro { color: var(--muted); font-size: 14px; line-height: 1.6; margin-bottom: 32px; max-width: 560px; }
+    #seo-preview article { border-top: 1px solid var(--border); padding: 20px 0; }
+    #seo-preview article h2 { font-size: 16px; margin-bottom: 4px; }
+    #seo-preview article .cat { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    #seo-preview article .sub { font-size: 13px; color: var(--muted); font-style: italic; margin-bottom: 10px; }
+    #seo-preview article p { font-size: 13px; line-height: 1.7; color: #b8b8b8; }
+    #seo-preview .cta { margin-top: 32px; font-size: 12px; color: var(--muted); }
+    #seo-preview .cta a { color: var(--text); }
+
+    /* AUTH */
+    #auth-screen {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .auth-box { width: 100%; max-width: 380px; }
+    .auth-header { text-align: center; margin-bottom: 16px; }
+    .auth-logo { display: block; margin: 0 auto 12px; width: 56px; height: 56px; max-width: 56px; border-radius: 50%; overflow: hidden; }
+    .auth-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    .auth-title { font-family: 'Rye', serif; font-size: 20px; color: var(--text); letter-spacing: 0.02em; }
+    .auth-sub { margin-top: 4px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+    .auth-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 20px; }
+    .btn-google {
+      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: #fff; color: #1a1a1a; border: none; border-radius: 12px; padding: 12px;
+      font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer;
+      transition: background 0.15s, box-shadow 0.15s;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.3); letter-spacing: 0.02em;
+    }
+    .btn-google:hover { background: #f5f5f5; box-shadow: 0 2px 12px rgba(0,0,0,0.4); }
+    .btn-google svg { flex-shrink: 0; }
+
+    .divider {
+      display: flex; align-items: center; gap: 12px; margin: 14px 0;
+      color: var(--muted); font-size: 11px;
+    }
+    .divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+    .field { margin-bottom: 10px; }
+    .field label { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .field input {
+      width: 100%; background: #050505; border: 1px solid var(--border); border-radius: 10px;
+      padding: 10px 14px; font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text);
+      outline: none; transition: border-color 0.15s;
+    }
+    .field input::placeholder { color: #444; }
+    .field input:focus { border-color: rgba(255,255,255,0.3); box-shadow: 0 0 0 3px rgba(255,255,255,0.05); }
+
+    .btn-enter {
+      width: 100%; background: #f0f0f0; color: #0f0f0f; border: none; border-radius: 12px;
+      padding: 12px; font-family: 'Inter', sans-serif; font-size: 13px; cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s; margin-top: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4); letter-spacing: 0.03em;
+    }
+    .btn-enter:hover { opacity: 0.9; }
+    .btn-enter:active { transform: scale(0.99); }
+    .btn-enter:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .auth-error {
+      background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 10px; padding: 10px 14px; font-size: 13px; color: #f87171;
+      margin-top: 14px; display: none;
+    }
+
+    /* LIBRARY */
+    #library-screen { display: none; height: 100vh; overflow: hidden; flex-direction: column; }
+
+    .lib-header {
+      flex-shrink: 0;
+      background: rgba(0,0,0,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); padding: 0 32px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .lib-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .lib-brand-logo { width: 26px; height: 26px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+    .lib-brand-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .lib-brand-name { font-family: 'Rye', serif; font-size: 14px; color: var(--text); letter-spacing: 0.02em; }
+    .lib-right { display: flex; align-items: center; gap: 14px; }
+    .user-avatar {
+      width: 26px; height: 26px; border-radius: 50%; background: #333;
+      border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center;
+      justify-content: center; font-size: 11px; font-weight: 700; color: #fff; overflow: hidden;
+    }
+    .user-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .btn-nav {
+      background: none; border: 1px solid var(--border); border-radius: 8px; padding: 4px 11px;
+      font-family: 'Inter', sans-serif; font-size: 11px; color: var(--muted); cursor: pointer;
+      transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em;
+    }
+    .btn-nav:hover { color: var(--text); border-color: rgba(255,255,255,0.15); }
+
+    .lib-main { flex: 1; overflow-y: auto; padding: 32px 32px 24px; }
+    .lib-heading { margin-bottom: 28px; }
+    .lib-heading-eyebrow { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .lib-heading h1 { font-size: 26px; color: var(--text); letter-spacing: 0.02em; }
+
+    /* BOOK GRID */
+    #book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 20px; }
+
+    .book-card { cursor: pointer; display: flex; flex-direction: column; gap: 8px; transition: transform 0.2s; }
+    .book-card:hover { transform: translateY(-3px); }
+
+    .book-cover {
+      aspect-ratio: 2/3; border-radius: 5px 10px 10px 5px; position: relative; overflow: hidden;
+      box-shadow: -4px 0 0 0 rgba(0,0,0,0.4), 4px 4px 20px rgba(0,0,0,0.6), inset -3px 0 6px rgba(0,0,0,0.3);
+      display: flex; flex-direction: column; justify-content: space-between; padding: 14px 12px;
+    }
+    .book-cover::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+      background: rgba(0,0,0,0.35); border-radius: 5px 0 0 5px; z-index: 1;
+    }
+    .book-cover::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(255,255,255,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .book-category { position: relative; z-index: 2; font-size: 7px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+    .book-title-cover { position: relative; z-index: 2; font-size: 12px; line-height: 1.4; color: rgba(255,255,255,0.92); }
+    .book-meta { display: flex; flex-direction: column; gap: 2px; }
+    .book-title-below { font-size: 11px; color: var(--text); line-height: 1.4; }
+    .book-subtitle-below { font-size: 10px; color: var(--muted); line-height: 1.4; }
+    .book-readtime { font-size: 10px; color: #444; margin-top: 1px; }
+    /* EMPTY STATE */
+    #empty-state { display: none; text-align: center; padding: 80px 0; color: var(--muted); }
+    #empty-state svg { width: 48px; height: 48px; margin: 0 auto 16px; opacity: 0.3; }
+    #empty-state h2 { font-size: 20px; color: #444; margin-bottom: 8px; }
+    #empty-state p { font-size: 13px; color: #3a3a3a; max-width: 320px; margin: 0 auto; line-height: 1.6; }
+
+    /* MODAL */
+    #modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 100;
+      backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); padding: 24px; overflow-y: auto;
+    }
+    #modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+
+    .modal {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+      width: 100%; max-width: 680px; margin: auto; padding: 0; overflow: hidden;
+      animation: modal-in 0.2s ease;
+    }
+    @keyframes modal-in {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-cover-bar { height: 6px; width: 100%; }
+    .modal-header { padding: 28px 32px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+    .modal-eyebrow { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .modal-title { font-size: 22px; line-height: 1.35; color: var(--text); }
+    .modal-subtitle { margin-top: 8px; font-size: 15px; color: var(--muted); line-height: 1.5; font-style: italic; }
+    .modal-close {
+      flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--surface2);
+      border: 1px solid var(--border); color: var(--muted); cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 18px; line-height: 1;
+      transition: color 0.15s, background 0.15s;
+    }
+    .modal-close:hover { color: var(--text); background: #2a2a2a; }
+    .modal-divider { margin: 24px 32px 0; height: 1px; background: var(--border); }
+
+    /* PROGRESS */
+    #modal-progress-wrap { padding: 14px 32px 0; display: none; }
+    #modal-progress-track { height: 3px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; margin-bottom: 6px; }
+    #modal-progress-fill { height: 100%; background: #e8e8e8; border-radius: 99px; width: 0%; transition: width 0.3s ease; }
+    #modal-progress-text { font-size: 11px; color: var(--muted); letter-spacing: 0.05em; }
+    #modal-completed-text { padding: 14px 32px 0; font-size: 12px; color: #aaa; letter-spacing: 0.06em; display: none; }
+
+    /* READING AREA */
+    .modal-body {
+      padding: 20px 32px 36px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    /* Rich content styles inside modal */
+    .modal-body p {
+      margin-bottom: 1.2em;
+    }
+    .modal-body h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 1.8em 0 0.6em;
+      letter-spacing: 0.01em;
+    }
+    .modal-body h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ddd;
+      margin: 1.4em 0 0.5em;
+      letter-spacing: 0.01em;
+    }
+    .modal-body strong {
+      color: #e8e8e8;
+      font-weight: 600;
+    }
+    .modal-body ul, .modal-body ol {
+      padding-left: 1.4em;
+      margin-bottom: 1em;
+    }
+    .modal-body li {
+      margin-bottom: 0.4em;
+    }
+
+    /* TABLE STYLES */
+    .modal-body .table-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin: 1.8em 0 0.6em;
+    }
+    .modal-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.4em;
+      font-size: 14px;
+    }
+    .modal-body table th {
+      background: rgba(255,255,255,0.06);
+      color: #e0e0e0;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+    }
+    .modal-body table td {
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+      color: #bbb;
+      vertical-align: top;
+    }
+    .modal-body table tr:nth-child(even) td {
+      background: rgba(255,255,255,0.02);
+    }
+    .modal-body table .td-no {
+      color: #444;
+      font-style: italic;
+    }
+
+    .modal-body-empty { padding: 20px 32px 36px; font-size: 14px; color: #444; font-style: italic; }
+
+    /* LOADING */
+    #loading-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .spinner { width: 28px; height: 28px; border: 2px solid rgba(255,255,255,0.1); border-top-color: #ccc; border-radius: 50%; animation: spin 0.7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+   @media (max-width: 600px) {
+      html, body { height: 100dvh; }
+      .lib-main { padding: 24px 16px 16px; }
+      .lib-header { padding: 0 16px; }
+      #book-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 14px; }
+      .modal-header { padding: 22px 20px 0; }
+      .modal-divider { margin: 18px 20px 0; }
+      #modal-progress-wrap, #modal-completed-text { padding-left: 20px; padding-right: 20px; }
+      .modal-body, .modal-body-empty { padding: 16px 20px 28px; }
+      .modal-title { font-size: 18px; }
+      .modal-body table { font-size: 12px; }
+      .modal-body table th, .modal-body table td { padding: 7px 10px; }
+    }
+  
+    /* language tweaks */
+    html,body{font-family:'Inter','Noto Sans Arabic',sans-serif}#seo-preview h1{font-family:'Noto Sans Arabic',serif;font-weight:700}*{letter-spacing:0 !important}[dir="rtl"] .modal-body table th{text-align:right}[dir="rtl"] .modal-body ul,[dir="rtl"] .modal-body ol{padding-left:0;padding-right:1.4em}[dir="rtl"] .book-cover{border-radius:10px 5px 5px 10px;box-shadow:4px 0 0 0 rgba(0,0,0,0.4),-4px 4px 20px rgba(0,0,0,0.6),inset 3px 0 6px rgba(0,0,0,0.3)}[dir="rtl"] .book-cover::before{left:auto;right:0;border-radius:0 5px 5px 0}
+  </style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading-screen">
+  <div class="spinner"></div>
+</div>
+
+<!-- Auth -->
+<div id="auth-screen" style="display:none">
+  <div class="auth-box">
+    <div class="auth-header">
+      <div class="auth-logo">
+        <img src="logo.jpeg" alt="Perspective Library" />
+      </div>
+      <div class="auth-title">Perspective Library</div>
+      <div class="auth-sub">غرفة قراءة خاصة.</div>
+    </div>
+    <div class="auth-card">
+      <button class="btn-google" id="btn-google">
+        <svg width="18" height="18" viewBox="0 0 18 18">
+          <path fill="#4285F4" d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"/>
+          <path fill="#34A853" d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z"/>
+          <path fill="#FBBC05" d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z"/>
+          <path fill="#EA4335" d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z"/>
+        </svg>
+        المتابعة باستخدام Google
+      </button>
+      <div class="divider">أو</div>
+      <form id="email-form" autocomplete="off">
+        <div class="field">
+          <label>الاسم</label>
+          <input type="text" id="field-name" placeholder="اسمك" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="field-email" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label>كلمة المرور</label>
+          <input type="password" id="field-password" placeholder="••••••••" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn-enter" id="btn-enter">ادخل المكتبة</button>
+      </form>
+      <div class="auth-error" id="auth-error"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Library -->
+<div id="library-screen">
+  <header class="lib-header">
+  <a class="lib-brand" href="#">
+      <div class="lib-brand-logo">
+        <img src="logo.jpeg" alt="Perspective Library" />
+      </div>
+      <span class="lib-brand-name">Perspective Library</span>
+    </a>
+    <div class="lib-right">
+      <div class="user-avatar" id="user-avatar-el"></div>
+      <button class="btn-nav" id="btn-signout">تسجيل الخروج</button>
+    </div>
+  </header>
+  <main class="lib-main">
+    <div class="lib-heading">
+      <div class="lib-heading-eyebrow">مجموعتك</div>
+      <h1>المكتبة</h1>
+    </div>
+    <div id="book-grid"></div>
+    <div id="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      <h2>The shelves are empty.</h2>
+      <p>Books will appear here once they're added to the <code style="background:#1e1e1e;padding:2px 6px;border-radius:4px;font-size:11px">ARTICLES</code> array in the source code.</p>
+    </div>
+  </main>
+</div>
+
+<!-- Modal -->
+<div id="modal-overlay">
+  <div class="modal">
+    <div class="modal-cover-bar" id="modal-cover-bar"></div>
+    <div class="modal-header">
+      <div>
+        <div class="modal-eyebrow" id="modal-eyebrow"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-subtitle" id="modal-subtitle"></div>
+      </div>
+      <button class="modal-close" id="modal-close">&#215;</button>
+    </div>
+    <div class="modal-divider"></div>
+    <div id="modal-progress-wrap">
+      <div id="modal-progress-track">
+        <div id="modal-progress-fill"></div>
+      </div>
+      <div id="modal-progress-text">0% مكتمل</div>
+    </div>
+    <div id="modal-completed-text">تمّ ✓</div>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script>
+// ─── BOOKS ────────────────────────────────────────────────────────────────────
+const ARTICLES = [
+  {
+    "slug": "anger",
+    "title": "كيف تستخدم الغضب لصالحك",
+    "subtitle": "الغضب ليس مشكلة إذا كنت تعرف ما هو",
+    "category": "المشاعر",
+    "color": "linear-gradient(135deg, #1a1a2e, #16213e)",
+    "content": "الغضب دايماً مرتبط بالظلام والشر. في مجتمعنا، بتتعامل مع الغضب كأنه مرض. وإذا ما عرفت تتعامل معاه، فعلاً بيعتبر مرض. متقلقش — هنا بنشرح الغضب بلغة بسيطة وسهلة، مع خطوات عملية.\n\n1. ما هو الغضب؟\n\nالغضب هو العاطفة التي تنتابك عندما تشعر بأن شيئاً ما ليس على ما يرام. لا يهم إن كان الأمر صحيحاً أم خطأ في الواقع؛ ما دام أنك تشعر بذلك، فستغضب. وقد يحدث هذا بسبب مشاعر الظلم أو عدم الاحترام وغيرها.\n\n2. ما الذي يحدث فعليًا عندما تغضب؟\n\nعندما تغضب، بيولوجيًا، يبدأ جسمك في الاستعداد للقتال — سواء كان لفظيًا أو جسديًا.\n\nA. القشرة الجبهية الأمامية تُقمع\n\nقشرة ما قبل الجبهية هي الجزء الأمامي من دماغك المسؤول عن التفكير، الحكم، والتحكم في الدوافع. باختصار، ينخفض معدل الذكاء وتصبح أقل ذكاءً خلال تلك الفترة. نتيجة لذلك، تتوقف عن التفكير المنطقي. لهذا السبب ستلاحظ الناس يتجادلون حول مواضيع غبية لدرجة أنها لا تُعقل حتى بالنسبة لهم بعد أن يهدأون.\n\nB. اندفاع الأدرينالين\n\nالأدرينالين يفرغ هرمونات التوتر في دمك، يجعل قلبك يضخ بسرعة أكبر، يزيد من إمداد الطاقة، يقوي عضلاتك، ويرفع تحمل الألم لديك. الآن أنت مستعد للقتال.\n\nلكن مع وجود هذه الأمور، تتخذ قرارات خاطئة — تضرب شخصًا، تصرخ على شخص ما، إلخ.\n\nهيا ندرس كيف نستخدم الغضب لصالحك. نحن نصنف الغضب إلى فئتين: شفهي & جسدي.\n\n1. الغضب اللفظي\n\nهذه طريقة أقل مقارنةً من الغضب. الغضب اللفظي يعني أنك غاضب لأنك تريد أن تقول شيئًا لشخص ما. على سبيل المثال، صديقك أفسد خطتك الآن وأنت تشعر كأنك تريد الصراخ عليه. عندما تريد أن تقول شيئًا لشخص ما غاضبًا — هذا هو اللفظي.\n\nكيف تستخدمه لصالحك:\n\nعندما تتعرض لغضب لفظي، خذ هاتفك وابدأ بتسجيل صوتي. سجِّل كل ما تريد قوله. لا تنشره في أي مكان — فقط سجِّله. عندما تهدأ، راجع التسجيل.\n\nلأنك عندما تغضب تقول ما تعنيه حقًا دون تردد. هذا هو أصدق الكلام. راجعه وإذا كان هناك شيء مهم، دونه. إذا لم يكن كذلك، احذف التسجيل.\n\n2. الغضب الجسدي\n\nهذا هو الشكل العنيف من الغضب. هنا، تريد أن تثور جسديًا لأن شخصًا ما ارتكب خطأً فادحًا. يحدث هذا بسبب الأدرينالين. من السهل التعرف عليه — عندما تريد أن تضرب شخصًا ما، فهو غضب جسدي.\n\nكيف تستخدمه لصالحك:\n\nلما تحس غضب جسدي، اعمل ٥٠ تمرين ضغط، أو ٥٠ قرفصاء. بس كده. لازم تستغل هالطاقة. لو ما وجهتهاش، هتوديكي للكارثة. فعل أي نوع من التمارين الرياضية. لو حابب تقاتل، جرّب الملاكمة مع الظل.\n\nاستخدم الغضب كمُسَرِّع نيترو — كما في السيارة، يمنحك دفعة فورية من القوة. لكن لا تعتمد عليه. الغضب مسرّع لأنه يأتي بشكلٍ عشوائيٍّ وفجائي، وليس أداة؛ فالأدوات تبقى معك دائماً، بينما الغضب لا.\n\nأراك لاحقًا.\n\nصديقك،\nSamarth Kulkarni"
+  },
+  {
+    "slug": "procrastination",
+    "title": "استخدم المماطلة لصالحك",
+    "subtitle": "توقف عن محاربتها. ابدأ بتوجيهها.",
+    "category": "الإنتاجية",
+    "color": "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
+    "isHtml": true,
+    "content": "\n<p>مسألة ضخمة تُعرف شهيرًا بالمماطلة. هذا شائع جدًا. المشكلة هي أن الناس تحدثوا عنها كثيرًا ومن زوايا مختلفة لدرجة أنها أصبحت أكثر إرباكًا. لذا، أنت في المكان المناسب الذي تحتاجه. أولًا سنفهم ثم نتعلم كيف نستخدمها لصالحنا بدلاً من حلها — أنت تعلم أن هذه طريقتنا.<\/p>\n\n<h2>1. ما هو التسويف؟<\/h2>\n<p>عندما تحتاج إلى إنجاز شيء لكنك تتجنبه وتقوم بأشياء أخرى، هذا ما يُسمى التسويف. أنت تعرف ذلك بالفعل، لذا دعنا ننتقل إلى الموضوع التالي دون إضاعة الوقت.<\/p>\n\n<h2>2. لماذا يحدث التسويف؟<\/h2>\n<p>عندما يكون هناك شيء لتقوم به مثل العمل، يبدأ الدماغ بالتفكير. نحن أيضًا حيوانات ودماغنا يعمل أيضًا مثل الحيوان. العمل الرئيسي لدماغنا هو البقاء على قيد الحياة. ولكي ننجو، نركز على الحاضر لا المستقبل — لأن إذا نجونا الآن، سنكون هناك لاحقًا. لهذا السبب يركز الدماغ أكثر على المكافأة الفورية.<\/p>\n\n<p>لفهم التسويف، نحتاج إلى التوقف عن التفكير بالوقت والتفكير بالطاقة. اقرأ المقارنة التالية:<\/p>\n\n<p class=\"table-label\"><strong>عمل<\/strong><\/p>\n<table>\n  <thead>\n    <tr>\n      <th>الخسارة الحالية<\/th>\n      <th>المكافأة الفورية<\/th>\n      <th>مكافآت على المدى الطويل<\/th>\n    <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>الطاقة بكميات كبيرة<\/td>\n      <td class=\"td-no\">لا<\/td>\n      <td>الانضباط<\/td>\n    <\/tr>\n    <tr>\n      <td>الملل<\/td>\n      <td class=\"td-no\">لا<\/td>\n      <td>العمل مكتمل<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>\n\n<p class=\"table-label\"><strong>تلفاز<\/strong><\/p>\n<table>\n  <thead>\n    <tr>\n      <th>الخسارة الحالية<\/th>\n      <th>المكافأة الفورية<\/th>\n      <th>مكافآت على المدى الطويل<\/th>\n    <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>الطاقة بكمية صغيرة جداً<\/td>\n      <td>متعة كبيرة<\/td>\n      <td class=\"td-no\">لا<\/td>\n    <\/tr>\n    <tr>\n      <td>قليل جدًا من الاحتكاك<\/td>\n      <td>إحساس إنجاز الأشياء<\/td>\n      <td class=\"td-no\">لا<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>\n\n<p>هل لاحظت ذلك؟ العمل يأخذ الكثير ولا يعطي شيئًا فورًا، بينما التلفاز يأخذ القليل جدًا ويعطي الكثير. لهذا نختار ذلك. نحن مبرمجون بهذه الطريقة. نركز أكثر على المكاسب الحالية بدلاً من الفوائد طويلة الأجل لأننا لا نعلم إذا كنا سنكون هناك وقت الفوائد المستقبلية — لكننا نعلم أننا على قيد الحياة الآن.<\/p>\n\n<p>إذًا بما أننا فهمنا أن آلية عملنا الطبيعية تركز على المدى القصير بدلًا من المدى الطويل، سنستخدم ذلك لصالحنا. قبل ذلك، سأخبركم بقصتي عن كيف تعلمت هذا.<\/p>\n\n<h2>قصتي<\/h2>\n<p>كان ذلك في فبراير 2025. تم رفع أول فيديو لي في 16 يناير 2025. كنت أعتقد سابقًا أنني أتمتع بمهارة كبيرة في التحدث بالإنجليزية أمام الكاميرا. لكن بعد تسجيلي الأول، أدركت أن الأمر كان صعبًا للغاية؛ التحدث بلغة لا أتحدثها في العادة، وأمام كاميرا. أردت صنع المزيد من الفيديوهات، لكنه كان أمرًا صعبًا للغاية ولم يكن هناك أي مكافأة. لذلك فعلت ذلك... التسويف.<\/p>\n\n<p>لكن المشكلة كانت إنه بعد ما بدوّر على شيء عشوائي طول اليوم، كل يوم، لما بحط راسي على الوسادة، بحس بألم عدم الفعل. بعرف إنك حسيت بده كمان. وبيكون مرعب.<\/p>\n\n<p>ففي أحد الأيام، قررت أن أنظف خزانتي لأنها كانت فوضوية. أنهيت التنظيف في نحو ساعة، وفوقت ذهبت للنوم ذلك اليوم شعرت أنني أنجزت شيئًا ما. وفي اليوم التالي، عندما جاءني فكر التسجيل، قررت أن أنظف مكتب دراستي بدلًا من ذلك. وفي اليوم الذي يليه، قرأت عشرين صفحة من كتاب. مضت الأيام هكذا، وقد أنهيت تنظيف الغرفة بأكملها، وقرأت كتابين، وبدأت عادتين جديدتين — مجردًا من المماطلة. (لاحقًا قمت بتسجيل الفيديو بالفعل، الذي كان يتحدث عن هذا الموضوع بالضبط.)<\/p>\n\n<h2>استخدام التسويف — الخطوات<\/h2>\n<p>يمكنك أن تأخذ لقطة شاشة أو تكتب هذا في الملاحظات. لكن أنصحك باستخدامه مرة واحدة فقط — ستتذكره بشكل أفضل بكثير.<\/p>\n\n<h3>الخطوة 1 — ابحث عن شيء لتسويبه<\/h3>\n<p>ابحث عن شيء تريد القيام به لكنه صعب جدًا. لا تختار شيئًا بسيطًا جدًا. شيء ستقوم به الآن أو لاحقًا لكنه صعب جدًا. كلما ز المهمة التي تؤجلها أصعب، كلما زادت التنوع في الخطوة التالية.<\/p>\n\n<h3>الخطوة 2 — ابحث عن مهمة منتجة تكون أسهل نسبيًا<\/h3>\n<p>بعد أن تقرر ما الذي ستؤجّله، ابحث عن مهام تكون منتجة وأسهل نسبيًا. أمثلة: التنظيف، التنظيم، المشي، القراءة، إلخ. ابحث عن ما يناسبك.<\/p>\n\n<h3>الخطوة 3 — المماطلة<\/h3>\n<p>كل يوم، استخدم هذا الإطار:<\/p>\n<p><strong>اليوم، لن أقوم بـ _______ (الشيء الصعب)، بل سأنفذ _______ (الشيء الأسهل نسبيًا).<\/strong><\/p>\n<p>على سبيل المثال:<br>\n1. اليوم، لن أسجل فيديو، بل سأنظف خزانتي.<br>\n2. اليوم، لن أعمل على المشروع، بل سأرتب صوري.<\/p>\n\n<h2>ملاحظات ختامية<\/h2>\n<p>هذه التقنية تعمل بشكل رائع. شيء واحد هو أنك في النهاية ستضطر للقيام بالأشياء الصعبة — لقد صنعت الفيديو بعد التسويف. لكن استخدام هذه التقنية أفضل بكثير من مجرد التسويف دون أن تُظهر شيئًا.<\/p>\n\n<p>إذن، انطلق وتأجل.<\/p>\n\n<p>أراك.<br>\nصديقك،<br>\n<strong>Samarth Kulkarni<\/strong><\/p>\n    "
+  },
+  {
+    "slug": "conflicts",
+    "title": "استخدم الصراعات لصالحك",
+    "subtitle": "لست بحاجة إلى الهروب من المشكلات. أنت بحاجة إلى ترقيتها.",
+    "category": "طريقة التفكير",
+    "color": "linear-gradient(135deg, #1a0a00, #3d1f00, #1a0a00)",
+    "isHtml": true,
+    "content": "\n<p>النزاعات موجودة في كل مكان. هنا، هناك، معك، معي، مع الفقراء، مع الأغنياء، مع كبار السن، مع الأطفال، مع الأشجار، مع الحيوانات، الجميع. (النزاعات وفية جدًا لأنها لا تتركك أبدًا، ههه). الجميع يريد الخروج من الصراع، لكن هل يمكنك؟ إذا لا، لماذا؟ إذا نعم، لماذا؟ وإذا استطعنا الخروج من كل النزاعات، كيف سيكون الأمر؟ لنرى.<\/p>\n\n<h2>ما هي الصراعات؟<\/h2>\n<p>الصراعات ببساطة عندما تريد شيئًا بطريقة معينة ولا يكون كذلك. تُعرف أيضًا بـ 'المشاكل'. السبب في أنني أستخدم كلمة 'صراع' بدلاً من 'مشكلة' هو أن المشكلات شيء يمكنك حله والخروج منه — لكن في الصراعات، عليك أن تبقى مشاركًا نشطًا لحلها. ستفهم ما أعني.<\/p>\n\n<p>سبب وجود الصراع هو <strong>'الرغبة'<\/strong>. قد تكون سمعت في مكان ما أن 'كلما قلت رغبتك، كلما قلت مشاكلك' — يبدو الأمر منطقيًا الآن، بالنسبة لي أيضًا. على سبيل المثال: تريد مليون دولار ولا تملكها (لهذا تريدها)، لذلك عليك أن تعمل، تتعلم، تكرر، وتكافح. هذه هي المشكلات — صراع. إذا لم تكن تريد مالًا أكثر مما تملك الآن، فلن يكون هناك صراع يتعلق بالمال.<\/p>\n\n<p>أنا لا أقول \"لا تريد أي شيء وتعيش كما هو\" — لأن هناك مشاكل ستظهر أيضًا. لن أقدم لك نصيحة على نمط بوذا. سأشرح لك وأخبرك متى تترك صراعًا ومتى تدخل صراعًا. لأنك إذا لم تواجه أي صراع أبداً، فإن الحياة تسير بطريقة مختلفة — وسنتحدث عن ذلك أيضًا. باختصار: <strong>كيف تستغل الصراعات لصالحك.<\/strong><\/p>\n\n<h2>كل ما تفعله هو حل صراع<\/h2>\n<p>الآن انظر إلى نفسك. ماذا تفعل؟ تقرأ هذا الكتاب. لماذا؟ لأنك تريد أن تفهم وتستغل الصراع لصالحك. هذا صراع تحله. أنت ترتدي ملابس لأنك لا تريد أن تكون عارياً. هذا أيضاً صراع. أنت تتنفس لأنك لا تريد أن تموت. هذا صراع سلبي تشارك فيه دون أن تفكر فيه بفعالية. أنت تأكل لأنك لا تريد أن تموت من الجوع ولأنك تحتاج إلى طاقة. صراع.<\/p>\n\n<p>هل ترى النمط؟ كل شيء تقوم به هو حل شيء ما. ما لاحظته هو أن كل ما يفعله أي شخص هو حل مشكلة.<\/p>\n\n<p>اليوم، يمكنك ترك الكتاب هنا والتركيز فقط على حياتك أنت وحولك، وملاحظة الصراعات التي يعيشونها. لأنك تعلم أن كتب Perspective Library كلها ليست للمُجرّد القراءة — هذه الكتب مُصمَّمة لفوائد حقيقية في حياتك العمليّة من خلال الفعل. لذا، يمكنك و<strong>تحتاج<\/strong> إلى ترك الكتاب الآن والبدء بملاحظة ما حولك. وبعد أن تفعل ذلك ليوم واحد على الأقل، يمكنك و<strong>تحتاج<\/strong> إلى العودة هنا ومتابعة القراءة.<\/p>\n\n<p><em>{إذا لم تقم بالملاحظات، فستعرف الفكرة لكنك لن تفهمها ولن تتمكن من استخدامها بفعالية في حياتك. الأمر ممل وصعب، ولهذا السبب ينجح.}<\/em><\/p>\n\n<h2>لماذا يعاني الناس من أشياء مثل مشاكل العلاقات والمشاكل النفسية<\/h2>\n<p>سترى الكثير من الناس، خاصةً في الوقت الحالي، يواجهون مشاكل مثل الاكتئاب والقلق ومشاكل العلاقات وأشياء من هذا القبيل. كثير من الناس مروا بذلك. وبما أنني مررت بذلك أيضًا، سأحكي لك قصة.<\/p>\n\n<p>كان عام 2022 وحصلت على أول انكسار قلبي. فتاة أحببتها لمدة 5 سنوات. (سأكتب كتابًا مختلفًا مخصصًا تمامًا لهذه القصة — قد تعجبك أيضًا.) عندما تعرضت للانكسار، مثل معظم الناس، بدأت أكتئب. لكنني كنت أستمتع بالاكتئاب. بدأت أفكر كثيرًا، أتوتر، أشعر بالقلق. ومثل الجميع، أردت الخروج.<\/p>\n\n<p>لكن هنا أكثر شيء مثير — لا أتذكر متى خرجت منه. حقًا. لا أتذكر اليوم أو الشهر أو الفصل أو حتى السنة. كان الأمر تلقائيًا. قبل أيام قليلة فقط، كنت أفكر فيه وجاءت إلى ذهني فكرة \"كيف تستغل الصراعات لصالحك\".<\/p>\n\n<p>أعرف لماذا حدث التحول. حدث التحول لأن <strong>أنا انشغلت<\/strong>. في الحقيقة نسيت أنني مكتئب. كيف؟ لأنني انشغلت بصراعات أخرى. بدأت أمارس الرياضة، وأتعلم عن المال، وانشغلت كثيرًا بهذه الأمور لدرجة أنني نسيت المشاكل النفسية. LOL. لكن الأمر نجح.<\/p>\n\n<p>إليك تحليل السبب وراء 'لماذا يصاب الناس بالاكتئاب' — <strong>يصيب الناس الاكتئاب عندما يُزيل صراع.<\/strong> متى يصاب الناس بالاكتئاب؟ عندما يتركهم أحد، عندما يموت أحد، عندما يفشلون في ما كانوا يفعلون. كل هذه الأحداث هي نهاية صراع. عندما يُزال شيء ما، يجب استبداله بأشياء أخرى للحفاظ على التوازن.<\/p>\n\n<p>عندما أحببت فتاة لمدة 5 سنوات، كنت مشغولًا بالصراع حول كيف أطرح عليها، كيف أتحدث معها، كيف أحصل على رقمها، إلخ. لكن عندما تعرضت لصدمة قلبية، انتهى الصراع بأكمله. أصبح فارغًا. لكن دماغنا مدرب على حل الصراعات — وعندما لا يكون هناك صراع، يخلق واحدًا. أي: مشكلات نفسية. هل هذا منطقي؟<\/p>\n\n<p>بعد مرحلة مشاكلي النفسية، عندما كنت أركز على بناء العضلات والمال، تغير صراعي. الآن لدي مشكلات مثل — أي تمارين أمارس؟ ماذا أكل؟ متى أتمرن؟ كيف أكسب المال؟ أي عمل تجاري؟ ماذا أفعل إذا لم يكن لدي رأس مال؟ دماغي انشغل بهذا الصراع ونسي السابق.<\/p>\n\n<h2>أنت لا تخرج من المشكلات. أنت تُطوّرها.<\/h2>\n<p>المتشرد في الشارع يواجه صراعًا للحصول على الطعام. يعتقد المتشرد أنه إذا كان لديه طعام، سيخرج من المشكلات. لكن لا. بعد أن يحصل على الطعام، سيبحث عن ملابس أفضل، منزل، أصدقاء، المزيد من المال، مناصب أعلى، عائلة، إلخ.<\/p>\n\n<p>النزاعات لن تنتهي. ستنتهي عندما تموت.<\/p>\n\n<h2>كيفية استخدامه — الخطوات<\/h2>\n\n<h3>الخطوة 1 — حدد الصراعات الحالية<\/h3>\n<p>انظر إلى الصراعات التي لديك. لا تحسب الصراعات الواضحة مثل الطعام والنوم. انظر إلى الكبيرة — الأعمال، الصحة (ليس \"الصحة\" العامة بل المشكلات الفعلية وما تفعله حيالها)، علاقاتك، إلخ. يمكنك كتابتها إذا أردت. لكن الفهم والوعي هو ما نحتاجه.<\/p>\n\n<h3>الخطوة 2 — رتبهم<\/h3>\n<p>بعد أن تعرف الصراعات التي تكافح معها، ابحث عن تلك التي تعتبر <strong>جميل أن يكون<\/strong> — مثل بناء العضلات، كسب المال، تعلم مهارة. ثم انظر إلى تلك التي <strong>لا أريد<\/strong> — مثل المشاكل النفسية، المشتتات، مشاكل العلاقات.<\/p>\n\n<h3>الخطوة 3 — استبدال<\/h3>\n<p>الآن كل ما عليك هو استبدال الصراعات غير المرغوب فيها بالتي تريدها.<\/p>\n\n<p>على سبيل المثال — إذا كان هناك مشكلة في العلاقة، ابدأ بالتمرين. قد لا يبدو منطقيًا في البداية، لكن فكر في الأمر: إذا تمارين، الشخص الذي تواجه معه مشكلة سيفكر، \"أوه، هو يتحسن، عليّ أن أفعل شيئًا أيضًا.\" وسيفعلون شيئًا — لأن هذه هي قاعدة التوازن. عندما يتطور كلاكما، يمكنكما التحدث عن ذلك. يمكنكما فهم ما يفعله كل منكما. وستقربان مرة أخرى.<\/p>\n\n<p>وأسوأ الحالات، إذا انفصلت عن شريكك، لا يزال لديك بنية جسدية رائعة تهتم بها ولن تصاب بالاكتئاب. <strong>ربح مزدوج.<\/strong><\/p>\n\n<p>أعرف أنه قد يبدو معقداً بعض الشيء أو صعباً، لكن فقط افعلها. وإذا كان هناك أي غموض، أو أي سؤال يتعلق بالموضوع، فقط أرسِل لي رسالة خاصة على إنستغرام. أنا دائماً موجود من أجلك.<\/p>\n\n<p>إذاً، نعم،<br>\nأراك لاحقاً.<br><br>\nصديقك،<br>\n<strong>Samarth Kulkarni<\/strong><\/p>\n    "
+  },
+  {
+    "slug": "survival",
+    "title": "البقاء",
+    "subtitle": "فهم الأساس الذي يقوم عليه كل ما نفعله.",
+    "category": "علم النفس",
+    "color": "linear-gradient(135deg, #0a1628, #1a3a2a, #0a1628)",
+    "isHtml": true,
+    "content": "\n<p>مرحباً مرحباً. كتاب جديد، وموضوع جديد. في هذا الكتاب، سنلقي نظرة على الموضوع الذي يعتبر مهمّاً جداً جداً. لا أستطيع الكتابة بتفاصيل كثيرة لأنني أكتب هذا الكتاب في اللحظات الأخيرة قبل الموعد النهائي. وإذا لم أنهِه اليوم، سيكون ذلك مُشكلاً. في هذا الكتاب، نغطي الطبقة الأساسية وهو يشبه كتاب تمهيدي للموضوع. لكن هذا أحد مواضيعي المفضلة ويمكنك أن أكتب عنه كتاباً من ألف صفحة. إذا وجدت أي موضوع معين مثيراً للاهتمام أو أعجبك الكتاب كاملاً وترغب في المزيد من العمق، أرسل لي رسالة خاصة على إنستغرام وسأفعل ذلك بالتأكيد.<\/p>\n\n<p>نحن حيوانات. كنا حيوانات. لذا، نتصرف دائمًا كالحيوانات. كل ما نفعله مرتبط بطريقة ما بآلية البقاء. آلية البقاء شيء مهم جدًا جدًا، لأنه بدونها نموت. كما نرى قبل ذلك كان هناك اختراع الصفر والواحد الذي يُستَخدم في الحوسبة. الآن لدينا اختراعات واستخدام خوادم سحابية ضخمة، حواسيب كمية، ذكاء اصطناعي، كل شيء. لكن لفهم كيفية عمل الحاسوب الكمي، ما زلنا بحاجة إلى فهم الصفر والواحد. لأن هذا هو الأساس والأبسط للحواسيب الكمية ولا يمكننا صنعها بدون الصفر والواحد. نفس الشيء للذكاء الاصطناعي، ونفس الشيء لأي شيء يتعلق بالحاسوب. ونفس الشيء لنا. لا، ليس مفهوم الصفر والواحد، بل مفهوم فهم الأساسيات. أراهن أن إذا فهمت الأساسيات، ستحصل على تحكم وفهم كبير لأفعالك وأفعال الآخرين أيضًا.<\/p>\n\n<p>الأربعة الأساسية للبقاء هي - العواطف، الأفعال، ردود الفعل، البيئة. (أعتقد أن هذه هي الأربعة الأساسية، لكن إذا وجدنا شيئًا جديدًا لاحقًا، سنضيفه). في هذا الكتاب، سنركز على العواطف.<\/p>\n\n<p>هذه هي أهم سطر أريدك أن تفهمه تمامًا قبل المتابعة - هدف أي حيوان (بما في ذلك الإنسان) هو البقاء على قيد الحياة والحفاظ على بقاء النوع.<\/p>\n\n<p>هيا نبدأ.<\/p>\n\n<h2>العواطف<\/h2>\n\n<h3>Elais<\/h3>\n<p>كل ما يشعرنا بالسعادة أو المتعة يندرج تحت هذه الفئة. لقد قمت فعلاً ببحث واكتشفت أنه لا يوجد كلمة واحدة لكل نوع من أنواع السعادة والمتعة. لذلك اخترتها. Elais. Elais هو الحصول على أي نوع من المتعة والسعادة. Elais هو كل ما يشعرنا بالخير. السبب في وجود Elais هو أننا نحتاج للبقاء. كلما حصلنا على Elais، نريد المزيد منه لأن ذلك يشير إلى أن هذا العامل يحسن البقاء.<\/p>\n<p>نحن نشعر بالارتفاع عندما نأكل شيئًا، ننام، نرى شيئًا جميلًا، تتحدث إلينا فتاة جميلة، نبدوا رائعين، نُجري اتصالًا مع شخص ثري، إلخ. (يمكنني كتابة فقرات كاملة عن كل مثال، لكنك تعرف الموعد النهائي، آسف). نشعر بالراحة لأن كل هذا يزيد فرص البقاء لك ولفصيلك. عندما تأكل، تحصل على طاقة لتبقى على قيد الحياة. تنام لتحتفظ بالطاقة وتُصلح أي أضرار في الجسم، ما يزيد من البقاء. عندما تنظر إلى شيء جميل، يقول دماغك \"هذا جيد وليس سيئًا\" وهذا يعني أنك ستبقى. عندما تتحدث إلينا فتاة جميلة، قد تتقربون، وهذا يعني أن نوعكم سيستمر لأن نسلكم سيحصل على جينات مظهرية أفضل. وأكثر من ذلك.  \n\nباختصار - عندما نشعر بالارتفاع، تزداد فرص بقاءنا. أو يمكننا القول، عندما تزداد فرص بقاءنا، نشعر بالارتفاع.<\/p>\n\n<h3>الخوف<\/h3>\n<p>الخوف مخيف لأنه يهدد بقاءنا.  \nأيض، أريدك أن تتوقف عن تصنيف المشاعر إلى جيدة أو سيئة، بل أن تفهم فائدتها.  \nيُعتبر الخوف سيئًا لأننا نشعر به عندما ي تهدد بقاءنا.  \nوأيضًا، انسى ما قاله الناس لك، ستعرف ما هو ولماذا لاحقًا.  \nلنفترض أنك تمشي في الشارع.  \nبمفردك، هناك بعض الأشجار، تهب الرياح، الغسق، وأنت تستمتع بالإحساس.  \nفجأةً ترى رجلًا.  \nكبيرًا بعضعضلات ويمسك بسلاح معدني بيده.  \nستشعر بالخوف.  \nحدث هذا معي قبل أيام قليلة.  \nشعرت بخوف بسيط.  \nرغم أن الشخص كان عاديًا، حتى لو رأيت شخصًا كهذا وكان هو أكثر الناس طيبةً، ستظل تشعر بالخوف ولو قليلًا ما لم تكن مقاتلًا محترفًا.<\/p>\n<p>شيء واحد تخرجه من دماغك، على الأقل أثناء قراءة هذا الكتاب وفهمه واستخدامه، هو أننا لا ينبغي أن نحكم على أحد بمظهره الخارجي. نحن دائمًا نحكم على الناس بناءً على مظهرهم، وهذا ما صُرنا عليه. كل الحيوانات صُورت على هذا النحو أيضًا. الآن، لنعد إلى ذلك الرجل الذي رأيناه في عالمنا الافتراضي، نعم، ذلك الرجل الضخم ذو الرماح الحديدية. السبب في أنك تشعر بالخوف هو لأنه يمتلك بنية جسدية أفضل منك (قوة أكبر) وأيضًا يحمل سلاحًا (قوة أكبر حتى)، وعندما نرى شخصًا يتمتع بقوة أكبر، فهذا يعني ببساطة أن بقائنا في خطر. لهذا نخافه. وكما قلتُ سابقًا، إذا كنت محاربًا محترفًا، فلن تشعر بالخوف منه لأنك تمتلك قوة أكبر منه وهو لا يُشكّل أي تهديد لبقائك.<\/p>\n<p>ليس فقط هذا النوع من الخوف، بل أي نوع كان. لا أحب التحدث كثيراً عن مواضيع عشوائية عن وسائل التواصل الاجتماعي والتطوير الذاتي، لكن هذا الموضوع يتماشى مع هذا السياق — الخوف من الحكم. الجميع يقولون: \"لا تبقي الخوف من الحكم\"، لكن لا أحد يخبرك ما هو ولماذا يوجد أساساً. السبب في خوفنا من الحكم هو أننا من تلك الحيوانات التي تعيش في مجموعات. إذا لم نعمل وفق المجموعة، ستعتقد المجموعة أننا غير متوافقين معها، وهذا سيكون تهديداً لهم، لذا قد يتخلون عنا. إذا فعلوا ذلك، سنكون وحيداً. وإذا كنت وحيداً، فأنت فريسة سهلة. لا، ليس هذا هو السبب لأننا لم نعد في الغابة، لكن لا يزال لدينا هذا الشيء عميقاً في جيناتنا.<\/p>\n<p>الخوف من الفشل هو خوفك من \"ماذا لو فشلت\". لا تقلق، لن أقدم لك نصائح خبير وسائل التواصل الاجتماعي. السبب وراء خوفنا من الفشل هو أن مواردنا من وقت وطاقة واهتمام محدودة. في الواقع نحن لا نخاف من الفشل نفسه، بل نخاف من فقدان الموارد المحدودة. لأننا إذا فقدنا هذه الموارد، سيكون لدينا المزيد من النقصان. والشخص الذي يملك موارد أكثر منا ستكون فرصته في البقاء أكبر.<\/p>\n<p>باختصار - الخوف هو عندما يُهدد بقاؤك. لذا في المرة القادمة، عندما تشعر بالخوف في أي موقف، ركّز فقط على ربطه بآلية البقاء وقد تشعر بشيء مختلف.<\/p>\n\n<h3>أريد<\/h3>\n<p>أي نوع من الجذب أو الرغبة أو الهدف ينتمي إلى هذه الفئة. أنت تريد شيئًا. تريد شيئًا لأنك تعتقد أن هذا الشيء سيزيد من فرص البقاء على قيد الحياة. تريد المزيد من المال، لأن المال هو مخزن القيمة ويمكنك الحصول على الكثير من الأشياء منه مثل الطعام الذي سيزيد من فرص بقاءك. تريد أن تتزوج تلك الفتاة التي رأيتها لأنها بالنسبة لك أعلى من الأخريات. هي تبدو رائعة. وإذا تزوجتها، فإن أولادك سيحصلون على مظهر أفضل، والمظهر الأفضل = موارد أكثر = فرص بقاء أعلى. المظهر مهم جدًا جدًا. الناس يختلقون قولًا مثل \"آه، المظهر لا يهم، الشخص يجب أن يكون طيب القلب\". أختلف. يجب أن يمتلك الشخص كلاهما. المظهر ليس شيئًا موضوعيًا، إنه ذاتي. الفتاة التي أراها أجمل قد تكون عادية بالنسبة لك. {هذا مختلف عن الموضوع لكنني تذكرت ذلك، - إذا أردت أن تبدو رائعًا، أعتقد أن الحصول على بنية جسدية رائعة هو الخيار الأول}. أوه، آسف، نسيت الموضوع، نعم، لذا عندما تريد شيئًا، يكون ذلك فقط لأنك تريد تحسين فرص البقاء. الجميع يريد أن يكون مليونيرًا لأن موارده وبالتالي فرص بقاءه أكبر بكثير من شخص عادي متوسط. باختصار - أنت تريد شيئًا لتزيد فرص بقاءك.<\/p>\n\n<h3>غضب<\/h3>\n<p>تشعر بالغضب عندما يخطأ شيء ولا تستطيع التحكم فيه عقليًا. يمكننا أن نصف ذلك بعبارة \"القتال أو الهروب\"، فالغضب هو القتال. القشرة الجبهية الأمامية في دماغك تُقمع، وهي المسؤولة عن التفكير المنطقي، وهذا ما يوضح لنا لماذا يقتل الناس بعضهم البعض لأسباب تافهة. الغضب بوضوح غريزة بقاء.<\/p>\n<p>تخيل أن لديك خطة للحفلة وكنت تستعد لمدة شهر. أنت لست من محبي الحفلات ولكنك قررت القيام بذلك مرة واحدة على الأقل حتى لا تفوتك. لقد تأكدت من عدم وجود أي شخص مشغول في ذلك اليوم وسيكون كل من تريد معرفته متاحًا. لقد اشتريت طعامًا وديكورًا وحجزت مكانًا، وفي النهاية أنت على وشك إقامة حفلة. أو أستطيع أن أقول أنك كنت كذلك. لأن هناك رجلاً لا يستطيع رؤيتك سعيدة. لقد حجز القاعة بسعر أعلى. لقد سرق طعامك. أحرقت الديكور الخاص بك. لقد تعرضت للإهانة أمام شعبك المميز. كل ما تبذلونه من المرح، ذهب. في تلك اللحظة تريد قتله. بصراحة، لا أعتقد أنك تريد قتله لأنه أفسد شيئًا ما. كما تم بالفعل. لكنك في الواقع غاضبة جدًا لأنك شهدت للتو ما يمكن أن يفعله وتريد تجنبه. لا يمكنك التحكم في الضرر الذي حدث، ولكن يمكنك التحكم في الضرر المستقبلي. قتله هو الطريقة النهائية لمنعه. لا تفعل ذلك، وإلا ستلومني الشرطة على التلاعب بك من خلال كتابي. وأعلم أيضًا أنه ليس من السهل التلاعب بك. على أي حال، باختصار - أنت لا تغضب لأن شخصًا ما ارتكب خطأً ما، بل تغضب لتجنب تكرار ذلك.<\/p>\n\n<h3>الغيرة / الحسد<\/h3>\n<p>أولاً، \"الغيور والحنق ليسا سيئين\". إنهما غريزة بقاء. لقد بحثت واكتشفت أن الحيوانات أيضًا تشعر بالغيرة. الغيرة ليست خطيئة. إنها رسالة من دماغك تقول \"ستموت\". حقًا. دعني أوضح. الجميع يشعر بالغيرة من الأشخاص الذين يملكون شيئًا لا تملكه. قد يكون مالًا، أو مكانة، أو إنجازًا، أو حبًا، أو أي شيء. حتى الطفل يشعر بالغيرة من الطفل الآخر الذي يملك حلوى. الغيرة إشارة إلى أن شخصًا آخر يملك شيئًا لا تملكه. منذ بداية الحياة، كل من يملك موارد أكثر لديه فرص أعلى للبقاء. أي مورد.<\/p>\n<p>كان الأمر أبسط عندما كنا حيوانات. الموارد الوحيدة التي كانت تهم هي الشريك والطعام. بسيط هكذا. إذا كان لديك طعام أكثر، ستعيش أكثر، بالطبع. وإذا كان لديك شريك للتكاثر، سيبقى نوعك على قيد الحياة ولن ينقرض. بدون طعام ستموت وبدون شريك سيموت نوعك. بسيط. الطعام والشريك، هذا كل شيء. كان ذلك رائعًا، أليس كذلك؟ لكن الآن، مع تقدم الزمن، لدينا الكثير من الأشياء. كل شيء تملكه هو مورد. الجهاز الذي تستخدمه لقراءة هذا، الملابس، الطعام في ثلاجتك، المال الذي لديك، مكتبك، أصدقاؤك، كل شيء.<\/p>\n<p>لما تشوف حد عنده حاجة انت مش موجود، مثلاً تشوف حد عنده عربية غالية جداً. كيف يؤثر ذلك؟ - عندما يلاحظ الناس ذلك، يذهبون إليه لأن لديه سيارة أفضل مما يدل على أنه يمتلك موارد أكثر، أي المال. الكل يريد يكون في المجموعة اللي عندها أكبر قدر من الموارد لتزيد فرص بقاءهم. ولما يذهبون إلى هذا الشخص، من يبقى خلفهم؟ أنت. الشخص اللي بالفعل عنده موارد، موارده في تزايد. وأنت كان عندك موارد أقل ومواردك في تناقص. غير عادل. الوحدة تجعل المفترسين يصطادونك بسهولة. هذا سيء. فدماغك يعطيك شعورًا. الغيرة. وهذا هو الحال. لا تقلق، لا توجد مفترسات في هذا الوقت. لكن لدينا هذا في جيناتنا، فلا يمكن تجنبه. باختصار - لما تشوف حد عنده مورد معين انت مش موجود، تشعر بالغيرة.<\/p>\n\n<h3>الحزن<\/h3>\n<p>كلنا شعرنا به. لكن ما هو؟ في الواقع تعلمت هذا الآن بينما أكتب هذا. ولم أكن أعلم أنه هكذا. عندما تفقد شيئًا أو يحدث شيء سيء، تشعر بالحزن. إذا حدث ذلك لي، سأحزن أيضًا. لماذا؟ هذا أيضًا آلية بقاء. عندما نفقد شيئًا، نكون قد فقدنا موردًا بالفعل. يمكن أن يكون أي شيء، شخصًا تحبه، شيءًا مفضّل، ما كنت تريد القيام به، نعتبر كل شيء موردًا. (لا تظن أنني بارد القلب. أقول هذا لتوضيح). عندما نفقد موردًا، لا نريد مشاكل أخرى مماثلة. لهذا عندما نشعر بالحزن، لا نريد أن نفعل شيئًا. لا نريد الحديث، ولا العمل، ولا الأكل، لا شيء. لأن في تلك اللحظة، نحافظ على ما لدينا. طاقتنا. إذا فقدت شيئًا، فرص بقاءك منخفضة بالفعل بسبب نقص مواردك. الآن القيام بأي شيء يعني أن وقتك، طاقتك، وانتباهك سيُستهلك أيضًا، وهذا سيؤدي إلى تقليل مواردك أكثر، مما يقلل فرص بقاءك أكثر ويؤدي في النهاية إلى الموت. هذا ليس ما سيحدث فعليًا لكننا نفكر بهذه الطريقة. باختصار - عندما نفقد شيئًا، نشعر بالحزن ولا نفعل شيئًا يتطلب طاقة لإنقاذه وزيادة فرص بقاءنا.<\/p>\n\n<p>انتهيت. أعلم أنني أستطيع وأحتاج إلى كتابة تفاصيل أكثر، لكن أعتقد أن ذلك قد يسبب ارتباكًا إذا أضفت الكثير. أيضًا، هل تذكر ما قلت في البداية؟ \"أنا أكتب هذا الكتاب على وشك الموعد النهائي. وإذا لم أكمله اليوم، فسيكون الأمر مزعجًا.\" وليس الأمر \"اليوم\". لقد مضى ثلاثة أيام. وإذا لم أكمله اليوم، فسيكون حقًا في مشكلة كبيرة وسيفوض كل شيء. على أي حال، الكتاب انتهى. لكن الموضوع ليس كذلك. إنه موضوع ضخم لدرجة أنني لا أستطيع تغطيته حتى خلال سنة. لذا، سنستمر في رحلتنا.<\/p>\n\n<p>أراك.<br>\nصديقك،<br>\n<strong>Samarth Kulkarni<\/strong><\/p>\n    "
+  }
+];
+
+// ─── Firebase init ────────────────────────────────────────────────────────────
+firebase.initializeApp({
+  apiKey: "AIzaSyDSi-_yS2SeW6QqvSxfkJ7RHJZ-ArMz0j0",
+  authDomain: "perspective-library.firebaseapp.com",
+  projectId: "perspective-library",
+  storageBucket: "perspective-library.firebasestorage.app",
+  messagingSenderId: "960053593256",
+  appId: "1:960053593256:web:030144d380de81dcf12e9d"
+});
+
+const auth = firebase.auth();
+const db   = firebase.firestore();
+
+// ─── Elements ─────────────────────────────────────────────────────────────────
+const loadingScreen     = document.getElementById('loading-screen');
+const authScreen        = document.getElementById('auth-screen');
+const libraryScreen     = document.getElementById('library-screen');
+const btnGoogle         = document.getElementById('btn-google');
+const emailForm         = document.getElementById('email-form');
+const fieldName         = document.getElementById('field-name');
+const fieldEmail        = document.getElementById('field-email');
+const fieldPassword     = document.getElementById('field-password');
+const btnEnter          = document.getElementById('btn-enter');
+const authError         = document.getElementById('auth-error');
+const btnSignout        = document.getElementById('btn-signout');
+const userNameEl        = document.getElementById('user-name-el');
+const userAvatarEl      = document.getElementById('user-avatar-el');
+const bookGrid          = document.getElementById('book-grid');
+const emptyState        = document.getElementById('empty-state');
+const modalOverlay      = document.getElementById('modal-overlay');
+const modalClose        = document.getElementById('modal-close');
+const modalTitle        = document.getElementById('modal-title');
+const modalSubtitle     = document.getElementById('modal-subtitle');
+const modalEyebrow      = document.getElementById('modal-eyebrow');
+const modalCoverBar     = document.getElementById('modal-cover-bar');
+const modalContent      = document.getElementById('modal-content');
+const modalProgressWrap = document.getElementById('modal-progress-wrap');
+const modalProgressFill = document.getElementById('modal-progress-fill');
+const modalProgressText = document.getElementById('modal-progress-text');
+const modalCompletedTxt = document.getElementById('modal-completed-text');
+
+// ─── Auth state ───────────────────────────────────────────────────────────────
+let currentUser = null;
+
+const authTimeout = setTimeout(() => {
+  if (loadingScreen.style.display !== 'none') {
+    loadingScreen.style.display = 'none';
+    showAuth();
+  }
+}, 5000);
+
+auth.onAuthStateChanged(user => {
+  clearTimeout(authTimeout);
+  loadingScreen.style.display = 'none';
+  currentUser = user;
+  if (user) {
+    showLibrary(user);
+  } else {
+    showAuth();
+  }
+});
+
+function showAuth() {
+  authScreen.style.display    = 'block';
+  libraryScreen.style.display = 'none';
+}
+
+function showLibrary(user) {
+  authScreen.style.display    = 'none';
+  libraryScreen.style.display = 'flex';
+  const name = user.displayName || user.email?.split('@')[0] || "قارئ";
+
+  if (user.photoURL) {
+    userAvatarEl.innerHTML = `<img src="${user.photoURL}" alt="${name}" />`;
+  } else {
+    userAvatarEl.textContent = name[0].toUpperCase();
+  }
+  renderBooks();
+  openFromHash();
+}
+
+// ─── Google sign-in ───────────────────────────────────────────────────────────
+btnGoogle.addEventListener('click', async () => {
+  clearError();
+  const provider = new firebase.auth.GoogleAuthProvider();
+  try {
+    await auth.signInWithPopup(provider);
+  } catch (err) {
+    showError(friendlyError(err.code));
+  }
+});
+
+// ─── Email form ───────────────────────────────────────────────────────────────
+emailForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  clearError();
+  const name     = fieldName.value.trim();
+  const email    = fieldEmail.value.trim();
+  const password = fieldPassword.value;
+
+  if (!email || !password) return;
+
+  btnEnter.disabled    = true;
+  btnEnter.textContent = "جارٍ الدخول…";
+
+  try {
+    await auth.signInWithEmailAndPassword(email, password);
+  } catch (err) {
+    if (
+      err.code === 'auth/user-not-found' ||
+      err.code === 'auth/invalid-credential' ||
+      err.code === 'auth/invalid-email'
+    ) {
+      try {
+        const cred = await auth.createUserWithEmailAndPassword(email, password);
+        if (name) await cred.user.updateProfile({ displayName: name });
+      } catch (signupErr) {
+        showError(friendlyError(signupErr.code));
+        btnEnter.disabled    = false;
+        btnEnter.textContent = "ادخل المكتبة";
+        return;
+      }
+    } else if (err.code === 'auth/wrong-password') {
+      showError("كلمة المرور غير صحيحة.");
+      btnEnter.disabled    = false;
+      btnEnter.textContent = "ادخل المكتبة";
+      return;
+    } else {
+      showError(friendlyError(err.code));
+      btnEnter.disabled    = false;
+      btnEnter.textContent = "ادخل المكتبة";
+      return;
+    }
+  }
+
+  btnEnter.disabled    = false;
+  btnEnter.textContent = "ادخل المكتبة";
+});
+
+// ─── Sign out ─────────────────────────────────────────────────────────────────
+btnSignout.addEventListener('click', () => auth.signOut());
+
+// ─── Error helpers ────────────────────────────────────────────────────────────
+function showError(msg) {
+  authError.textContent   = msg;
+  authError.style.display = 'block';
+}
+function clearError() {
+  authError.style.display = 'none';
+  authError.textContent   = '';
+}
+function friendlyError(code) {
+  const map = {
+    'auth/invalid-email':          "يرجى إدخال بريد إلكتروني صالح.",
+    'auth/user-disabled':          "تم تعطيل هذا الحساب.",
+    'auth/user-not-found':         "لم يتم العثور على حساب. تحقق من بريدك الإلكتروني أو أنشئ حسابًا.",
+    'auth/wrong-password':         "كلمة المرور غير صحيحة.",
+    'auth/email-already-in-use':   "يوجد حساب بهذا البريد الإلكتروني بالفعل.",
+    'auth/weak-password':          "يجب ألا تقل كلمة المرور عن 6 أحرف.",
+    'auth/popup-closed-by-user':   "تم إلغاء تسجيل الدخول عبر Google.",
+    'auth/network-request-failed': "خطأ في الشبكة. تحقق من اتصالك.",
+    'auth/invalid-credential':     "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    'auth/too-many-requests':      "محاولات كثيرة جدًا. حاول مرة أخرى لاحقًا.",
+  };
+  return map[code] || "حدث خطأ ما. يرجى المحاولة مرة أخرى.";
+}
+
+// ─── Reading time helper ──────────────────────────────────────────────────────
+function readingTime(content, isHtml) {
+  if (!content) return null;
+  const text = isHtml ? content.replace(/<[^>]+>/g, ' ') : content;
+  const words = text.trim().split(/\s+/).length;
+  const mins  = Math.max(1, Math.round(words / 200));
+  return `${mins} دقائق للقراءة`;
+}
+
+// ─── Book grid ────────────────────────────────────────────────────────────────
+const DEFAULT_COLORS = [
+  'linear-gradient(150deg, #1a1a1a, #3a3a3a)',
+  'linear-gradient(150deg, #111, #2e2e2e)',
+  'linear-gradient(150deg, #1e1e1e, #444)',
+  'linear-gradient(150deg, #151515, #333)',
+  'linear-gradient(150deg, #0f0f0f, #2a2a2a)',
+  'linear-gradient(150deg, #1c1c1c, #3e3e3e)',
+  'linear-gradient(150deg, #121212, #262626)',
+  'linear-gradient(150deg, #181818, #383838)',
+  'linear-gradient(150deg, #101010, #303030)',
+];
+
+function renderBooks() {
+  bookGrid.innerHTML = '';
+
+  if (ARTICLES.length === 0) {
+    emptyState.style.display = 'block';
+    bookGrid.style.display   = 'none';
+    return;
+  }
+
+  emptyState.style.display = 'none';
+  bookGrid.style.display   = 'grid';
+
+  ARTICLES.forEach((article, i) => {
+    const color = article.color || DEFAULT_COLORS[i % DEFAULT_COLORS.length];
+    const rt    = readingTime(article.content, article.isHtml);
+
+    const card = document.createElement('div');
+    card.className = 'book-card';
+    card.innerHTML = `
+      <div class="book-cover" style="background: ${color}">
+        <div class="book-category">${article.category || ''}</div>
+        <div class="book-title-cover">${article.title}</div>
+      </div>
+      <div class="book-meta">
+        <div class="book-title-below">${article.title}</div>
+        ${article.subtitle ? `<div class="book-subtitle-below">${article.subtitle}</div>` : ''}
+        ${rt ? `<div class="book-readtime">${rt}</div>` : ''}
+      </div>
+    `;
+    card.addEventListener('click', () => openModal(article, color));
+    bookGrid.appendChild(card);
+  });
+}
+
+// ─── Firestore helpers ────────────────────────────────────────────────────────
+function sanitize(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, '_');
+}
+function progressDocId(email, title) {
+  return sanitize(email) + '_' + sanitize(title);
+}
+async function loadProgress(email, title) {
+  try {
+    const snap = await db.collection('progress').doc(progressDocId(email, title)).get();
+    return snap.exists ? snap.data() : null;
+  } catch { return null; }
+}
+async function saveProgress(email, title, percent, completed) {
+  try {
+    await db.collection('progress').doc(progressDocId(email, title)).set({
+      email, bookTitle: title, percent, completed
+    });
+  } catch { /* silent */ }
+}
+
+// ─── Modal + progress tracking ────────────────────────────────────────────────
+let scrollListener   = null;
+let saveDebounce     = null;
+let currentBookTitle = '';
+let isCompleted      = false;
+
+async function openModal(article, color, fromUrl) {
+  currentBookTitle = article.title;
+  isCompleted      = false;
+  if (!fromUrl) {
+    const want = '#book/' + slugOf(article);
+    if (location.hash !== want) history.pushState({ book: slugOf(article) }, '', location.pathname + location.search + want);
+  }
+
+  modalCoverBar.style.background = color;
+  modalEyebrow.textContent       = article.category || '';
+  modalTitle.textContent         = article.title    || '';
+  modalSubtitle.textContent      = article.subtitle || '';
+  modalSubtitle.style.display    = article.subtitle ? 'block' : 'none';
+
+  if (article.content) {
+    modalContent.className = 'modal-body';
+    if (article.isHtml) {
+      modalContent.innerHTML = article.content;
+    } else {
+      modalContent.textContent = article.content;
+    }
+  } else {
+    modalContent.className   = 'modal-body-empty';
+    modalContent.textContent = "محتوى الكتاب قريبًا.";
+  }
+
+  modalProgressWrap.style.display = 'none';
+  modalCompletedTxt.style.display = 'none';
+  modalProgressFill.style.width   = '0%';
+  modalProgressText.textContent   = "0% مكتمل";
+
+  modalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  modalOverlay.scrollTop = 0;
+
+  if (currentUser && article.content) {
+    const saved = await loadProgress(currentUser.email, article.title);
+    if (saved && saved.completed) {
+      isCompleted = true;
+      showCompletedState();
+    } else {
+      showProgressBar(saved ? saved.percent || 0 : 0);
+      if (saved && saved.percent > 0) {
+        const totalScroll = modalOverlay.scrollHeight - modalOverlay.clientHeight;
+        modalOverlay.scrollTop = (saved.percent / 100) * totalScroll;
+      }
+    }
+  } else if (article.content) {
+    showProgressBar(0);
+  }
+
+  if (article.content) {
+    scrollListener = () => onModalScroll();
+    modalOverlay.addEventListener('scroll', scrollListener);
+  }
+}
+
+function showProgressBar(pct) {
+  modalProgressWrap.style.display = 'block';
+  modalCompletedTxt.style.display = 'none';
+  modalProgressFill.style.width   = pct + '%';
+  modalProgressText.textContent   = Math.round(pct) + "% مكتمل";
+}
+
+function showCompletedState() {
+  modalProgressWrap.style.display = 'none';
+  modalCompletedTxt.style.display = 'block';
+}
+
+function onModalScroll() {
+  if (isCompleted) return;
+  const el    = modalOverlay;
+  const total = el.scrollHeight - el.clientHeight;
+  const pct   = total <= 0 ? 100 : Math.min(100, Math.round((el.scrollTop / total) * 100));
+
+  modalProgressFill.style.width = pct + '%';
+  modalProgressText.textContent = pct + "% مكتمل";
+
+  if (pct >= 100) {
+    isCompleted = true;
+    showCompletedState();
+    if (currentUser) saveProgress(currentUser.email, currentBookTitle, 100, true);
+    return;
+  }
+
+  if (saveDebounce) clearTimeout(saveDebounce);
+  saveDebounce = setTimeout(() => {
+    if (currentUser) saveProgress(currentUser.email, currentBookTitle, pct, false);
+  }, 3000);
+}
+
+function closeModal(fromUrl) {
+  const wasOpen = modalOverlay.classList.contains('open');
+  modalOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+  if (scrollListener) {
+    modalOverlay.removeEventListener('scroll', scrollListener);
+    scrollListener = null;
+  }
+  if (saveDebounce) {
+    clearTimeout(saveDebounce);
+    saveDebounce = null;
+  }
+  // deep link: take the book out of the URL (no scroll, no reload)
+  if (wasOpen && !fromUrl && findBookByHash()) {
+    if (history.state && history.state.book) history.back();
+    else history.replaceState(null, '', location.pathname + location.search);
+  }
+}
+
+modalClose.addEventListener('click', () => closeModal());
+modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ─── Deep links: every book has its own URL (#book/<slug>) — UI unchanged ────
+// Example: https://samarthkulkarni16.github.io/perspective-library-ar/#book/survival
+// Query strings (utm_*) are kept. Old links (#survival, #how-to-use-anger-to-your-advantage) still open the book.
+function slugOf(a) { return a.slug || legacySlugOf(a); }
+function legacySlugOf(a) { return String(a.title).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+function colorFor(a) { return a.color || DEFAULT_COLORS[ARTICLES.indexOf(a) % DEFAULT_COLORS.length]; }
+function findBookByHash() {
+  let key = '';
+  try { key = decodeURIComponent(location.hash || ''); } catch (e) { key = location.hash || ''; }
+  key = key.replace(/^#/, '').replace(/^book\//, '').toLowerCase();
+  if (!key) return null;
+  return ARTICLES.find(a => slugOf(a) === key || legacySlugOf(a) === key) || null;
+}
+function openFromHash() {
+  const a = findBookByHash();
+  const isOpen = modalOverlay.classList.contains('open');
+  if (a) {
+    if (isOpen && currentBookTitle === a.title) return;
+    if (isOpen) closeModal(true);
+    window.scrollTo(0, 0);
+    openModal(a, colorFor(a), true);
+  } else if (isOpen) {
+    closeModal(true);
+  }
+}
+window.addEventListener('hashchange', () => { if (currentUser) openFromHash(); });
+
+</script>
+
+<section id="seo-preview">
+  <h1>Perspective Library — كتب مجانية عن علم النفس والمشاعر وطريقة التفكير</h1>
+  <p class="intro">كتب قصيرة وعملية من تأليف Samarth Kulkarni حول لماذا نشعر ونتصرف هكذا — بدون زوائد، بدون حشو. سجل الدخول أعلاه لقراءة أي كتاب بالكامل، مجانًا.</p>
+
+  <article id="how-to-use-anger-to-your-advantage">
+    <div class="cat">المشاعر</div>
+    <h2>كيف تستخدم الغضب لصالحك</h2>
+    <div class="sub">الغضب ليس مشكلة إذا كنت تعرف ما هو</div>
+    <p>الغضب هو العاطفة التي تشعر بها عندما تحسّ بأن شيئًا ما ليس على ما يرام. لا يهم إن كان الأمر صحيحًا أم خطأ فعلاً — إذا شعرت بذلك، ستغضب. هذا الكتاب يوضح ما يحدث في جسمك ودماغك حين تغضب، وكيف تستطيع استغلال تلك الطاقة بدلاً من أن تتحكم بك.</p>
+  </article>
+
+  <article id="use-procrastination-to-your-advantage">
+    <div class="cat">الإنتاجية</div>
+    <h2>استخدم المماطلة لصالحك</h2>
+    <div class="sub">توقف عن محاربتها. ابدأ بتوجيهها.</div>
+    <p>المماطأة ليست مشكلة في قوة الإرادة — إنها الدماغ يختار المكافأة الفورية على المدى الطويل لأن تركيبه يفضّل البقاء الآن على البقاء لاحقًا. يشرح هذا الكتاب لماذا تحدث المماطأة وكيفية توجيهها بدلاً من محاربتها.</p>
+  </article>
+
+  <article id="use-conflicts-to-your-advantage">
+    <div class="cat">طريقة التفكير</div>
+    <h2>استخدم الصراعات لصالحك</h2>
+    <div class="sub">لست بحاجة إلى الهروب من المشكلات. أنت بحاجة إلى ترقيتها.</div>
+    <p>أنت لا تخرج من المشكلات، بل تُرقِّيها — الصراعات لا تنتهي حقًا. هذا الكتاب يشرح كيف تحدد، ترتب، وتستبدل الصراعات في حياتك لتظل دائمًا تستبدل المشكلات بأخرى أفضل.</p>
+  </article>
+
+  <article id="survival">
+    <div class="cat">علم النفس</div>
+    <h2>البقاء</h2>
+    <div class="sub">فهم الأساس الذي يقوم عليه كل ما نفعله.</div>
+    <p>نحن حيوانات، وكل ما نفعله يعود إلى آلية البقاء — العناصر الأربعة الأساسية هي العواطف، الأفعال، ردود الفعل، والبيئة. يركز هذا الكتاب على العواطف: لماذا نشعر بالمتعة، بالخوف، والرغبة، وكيف أن كل واحدة منها موجودة فقط لإبقائنا على قيد الحياة.</p>
+  </article>
+
+  <p class="cta">جميع الكتب الأربعة مجانية للقراءة بالكامل — <a href="#auth-screen">سجّل الدخول باستخدام Google لبدء القراءة</a>.</p>
+</section>
+
+</body>
+</html>
